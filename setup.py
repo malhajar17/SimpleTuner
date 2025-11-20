@@ -75,9 +75,6 @@ def build_rocm_wheel_url(package: str, version: str, rocm_version: str) -> str:
 
 def get_cuda_dependencies():
     return [
-        "torch>=2.9.0",
-        "torchvision>=0.24.0",
-        "torchaudio>=2.4.1",
         "triton>=3.3.0",
         "bitsandbytes>=0.45.0",
         "deepspeed>=0.17.2",
